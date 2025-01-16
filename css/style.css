@@ -6,7 +6,7 @@
 
 :root {
     --main-color: #33edd4;
-    --main-accent: #b5fbfb;
+    --main-accent: #b5fbfbc7;
     --sec-color: #f1f1f1;
     font-size: 16px;
     --dark-color: #333;
@@ -15,19 +15,22 @@
 
 .projects {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
-    gap: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 300px;
+    gap: 150px;
     padding: 20px;
+    width: 100vw;
 }
 
 .project {
     background-color: var(--main-accent);
-    height: 300px;
+    border-radius: 50px;
 }
 
 .project img {
     border: var(--sec-color) 3px solid;
-
+    margin: 2rem 22.5%;
+    height: 150px;
 }
 
 footer {
