@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --main-color: #33edd4;
+    --main-accent: #b5fbfb;
+    --sec-color: #f1f1f1;
+    font-size: 16px;
+    --dark-color: #333;
+    --dark-sec: #00687a;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 100px;
+    padding: 20px;
+}
+
+.project {
+    background-color: var(--main-accent);
+    height: 300px;
+}
+
+.project img {
+    border: var(--sec-color) 3px solid;
+
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: 20vh;
+}
