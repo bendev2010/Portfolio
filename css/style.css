@@ -36,6 +36,7 @@
     border-top-left-radius: 2rem;
     background-image: url('../images/banner_img.png');
     background-size: cover;
+    background-position: 30%;
     position: relative;
     height: 50%;
     width: 100%;
@@ -65,6 +66,11 @@
     margin-top: 4rem;
   } 
   
+  .skills ul {
+    width: 50%;
+    float: left;
+  }
+
   section {
     border: grey solid 1px;
     padding: 20px;
