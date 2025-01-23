@@ -74,6 +74,7 @@
   .skills ul {
     width: 50%;
     float: left;
+    margin: 2rem;
   }
 
   section {
