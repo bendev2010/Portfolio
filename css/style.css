@@ -60,7 +60,7 @@ header, section {
 }
 
 .headline h6 {
-  font-size: 1.25rem;
+  font-size: 1rem;
   margin-top: 4rem;
 } 
 
@@ -88,10 +88,6 @@ section h1 {
   margin-bottom: 2rem;
 }
 
-section p {
-  font-size: 1.5rem;
-}
-
 section h4 {
   font-weight: normal;
 }
@@ -107,7 +103,7 @@ margin: .5rem;
 }
 
 .listdiv ul {
-  padding: 10px;
+  padding: 5px;
 }
 
 .listdiv ul li {
