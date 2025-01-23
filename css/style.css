@@ -60,8 +60,8 @@ header, section {
 }
 
 .headline h6 {
-  font-size: 1rem;
-  margin-top: 4rem;
+  font-size: 1.1rem;
+  margin: 4rem 0 2rem 0;
 } 
 
 .skills {
