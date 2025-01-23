@@ -1,138 +1,136 @@
 * {
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 15px;
+}
+
+body {
+  /*background: aliceblue;*/
+  background: navy;
+  padding: 25px;
+  font-family: sans-serif;
+}
+/*button {
+  background: white;
+}
+
+button span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #000;
+} */
+header { 
+  height: 30rem;
+}
+
+header, section {
+  border:  2px solid grey;
+  border-radius: 2rem;
+  background-color: black;
+  color: #fff;
+}
+
+.bg_banner {
+  background-color: aliceblue;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  background-image: url('../images/banner.jpg');
+  background-size: cover;
+  background-position: 30%;
+  position: relative;
+  height: 50%;
+  width: 100%;
+}
+
+.bg_banner img {
+  border-radius: 50%;
+  border: white double 10px;
+  height: 10rem;
+  width: 10rem;
+  position: absolute;
+  top: calc(100% - 5rem);
+  left: 5%;
+} 
+
+.headline {
+  padding: 1rem;
+}
+
+.headline h1 {
+  margin: 0 0 0 40%;
+  font-size: 3rem; 
+}
+
+.headline h6 {
+  font-size: 1.5rem;
+  margin-top: 4rem;
+} 
+
+.skills {
+  display: flex;
+  border-top: solid 1px grey;
+}
+
+.skills ul {
+  width: 50%;
+  float: left;
+  margin: 2rem;
+}
+
+section {
+  border: grey solid 1px;
+  padding: 20px;
+  border-radius: 2rem;
+  margin: 20px 0;
+}
+
+section h1 {
+  font-size: 3rem;
+  color: #078e99;
+  margin-bottom: 2rem;
+}
+
+section p {
+  font-size: 1.5rem;
+}
+
+section h4 {
+  font-weight: normal;
+}
+
+section h4 span {
+  color: #09c1d0;
+  font-weight: bold;
+}
+
+.listdiv {
+padding: 20px;
+margin: 1.5rem;
+}
+
+.listdiv ul {
+  padding: 10px;
+}
+
+.listdiv ul li {
+  padding: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  :root {
+    font-size: 18px;
   }
+}
+@media screen and (max-width: 1200px) {
   :root {
     font-size: 15px;
   }
-  
-  body {
-    /*background: aliceblue;*/
-    background: navy;
-    padding: 25px;
-    font-family: sans-serif;
-  }
-  
-  /*button {
-    background: white;
-  }
-  
-  button span {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #000;
-  } */
-  
-  header { 
-    height: 30rem;
-  }
-
-  header, section {
-    border:  2px solid grey;
-    border-radius: 2rem;
-    background-color: black;
-    color: #fff;
-  }
-  
-  .bg_banner {
-    background-color: aliceblue;
-    border-top-right-radius: 2rem;
-    border-top-left-radius: 2rem;
-    background-image: url('../images/banner.jpg');
-    background-size: cover;
-    background-position: 30%;
-    position: relative;
-    height: 50%;
-    width: 100%;
-  }
-  
-  .bg_banner img {
-    border-radius: 50%;
-    border: white double 10px;
-    height: 10rem;
-    width: 10rem;
-    position: absolute;
-    top: calc(100% - 5rem);
-    left: 5%;
-  } 
-  
-  .headline {
-    padding: 1rem;
-  }
-  
-  .headline h1 {
-    margin: 0 0 0 40%;
-    font-size: 3rem; 
-  }
-  
-  .headline h6 {
-    font-size: 1.5rem;
-    margin-top: 4rem;
-  } 
-  
-  .skills ul {
-    width: 50%;
-    float: left;
-    margin: 2rem;
-  }
-
-  section {
-    border: grey solid 1px;
-    padding: 20px;
-    border-radius: 2rem;
-    margin: 20px 0;
-  }
-  
-  section h1 {
-    font-size: 3rem;
-    color: #078e99;
-    margin-bottom: 2rem;
-  }
-  
-  section p {
-    font-size: 1.5rem;
-  }
-  
-  section h4 {
-    font-weight: normal;
-  }
-  
-  section h4 span {
-   color: #09c1d0;
-   font-weight: bold;
-  }
-
-  .skills {
-    display: flex;
-    border-top: solid 1px grey;
-  }
-  
-.listdiv {
-  padding: 20px;
-  margin: 1.5rem;
 }
-
-  .listdiv ul {
-    padding: 10px;
+@media screen and (max-width: 750px) {
+  :root {
+    font-size: 10px;
   }
-
-  .listdiv ul li {
-    padding: 10px;
-  }
-  
-  @media screen and (min-width: 1200px) {
-    :root {
-      font-size: 18px;
-    }
-  }
-  @media screen and (max-width: 1200px) {
-    :root {
-      font-size: 15px;
-    }
-  }
-  @media screen and (max-width: 750px) {
-    :root {
-      font-size: 10px;
-    }
-  }
+}
