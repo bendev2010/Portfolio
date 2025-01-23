@@ -11,6 +11,7 @@
     color: #fff;
     padding: 25px;
     font-family: sans-serif;
+    overflow: hidden;
   }
   
   /*button {
@@ -95,6 +96,11 @@
   section h4 span {
    color: #09c1d0;
    font-weight: bold;
+  }
+
+  .skills {
+    height: 40%;
+    border-top: solid 1px grey;
   }
   
 .listdiv {
