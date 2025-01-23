@@ -12,16 +12,11 @@ body {
   padding: 25px;
   font-family: sans-serif;
 }
-/*button {
-  background: white;
+
+footer {
+  width: 100%;
 }
 
-button span {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #000;
-} */
 header { 
   height: 30rem;
 }
