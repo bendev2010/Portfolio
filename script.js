@@ -1,19 +1,14 @@
-const btn = document.getElementById('dark/light');
-const header = document.querySelectorAll('header');
-const secton = document.querySelectorAll('section');
+const btn = document.getElementById('modeswitch');
+const mode = document.querySelectorAll('.lightdark')
 
-function darkLight() {
-    if (section.style.color == white) {
-        section.style.color = white
-        section.style.background = black
-        header.style.color = white
-        header.style.background = black
+function colorScheme() {
+    if (mode.style.colorScheme === 'dark') {
+        mode.style.colorScheme = 'light';
+    } else if (mode.style.colorScheme === 'light') {
+        mode.style.colorScheme = 'dark';
     } else {
-        section.style.color = black
-        section.style.background = white
-        header.style.color = black
-        header.style.background = white
+        window.alert('Error');
     }
 }
 
-btn.addEventListener('click', darkLight)
+btn.addEventListener('click', colorScheme)

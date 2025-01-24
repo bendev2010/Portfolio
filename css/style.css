@@ -4,11 +4,12 @@
 }
 :root {
   font-size: 15px;
+  color-scheme: light dark;
 }
 
 body {
   /*background: aliceblue;*/
-  background: rgb(0, 0, 46);
+  background: light-dark(aliceblue, rgb(0, 0, 46));
   padding: 25px;
   font-family: sans-serif;
 }
@@ -21,11 +22,15 @@ header {
   height: 30rem;
 }
 
+.lightdark {
+  color-scheme: light;
+}
+
 header, section {
   border:  2px solid grey;
   border-radius: 2rem;
-  background-color: black;
-  color: #fff;
+  background-color: light-dark(white, black);
+  color: light-dark(#000, #FFF);
 }
 
 .bg_banner {
