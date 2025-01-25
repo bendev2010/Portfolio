@@ -9,13 +9,19 @@
 
 body {
   /*background: aliceblue;*/
-  background: light-dark(aliceblue, rgb(0, 0, 46));
+  background: light-dark(aliceblue, #00002e);
   padding: 25px;
   font-family: sans-serif;
 }
 
 footer {
   width: 100%;
+}
+
+#modeswitch {
+  padding: 1rem;
+  font-size: 1.5rem;
+  background-color: light-dark(aliceblue, #00002e);
 }
 
 header { 

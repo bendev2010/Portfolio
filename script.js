@@ -10,5 +10,5 @@ function colorScheme() {
         window.alert('Error');
     }
 }
-
-btn.addEventListener('click', colorScheme)
+//const elements = document.getElementsByTagName("*");
+btn.addEventListener('click', colorScheme())
