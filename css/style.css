@@ -18,21 +18,34 @@ nav {
   display: grid;
   width: 100%;
   padding: 0 20%;
-  grid-template-areas: 'button . . list menu';
+  background-color: aliceblue;
+  grid-template-areas: 'button . list menu';
+  grid-template-columns: 1fr 4fr 6fr 1fr;
 }
 
 nav ul {
   display: flex;
   justify-content: space-around;
   list-style-type: none;
-  grid-area: list
+  grid-area: list;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu {
+  grid-area: menu;
 }
 
 #modeswitch {
-  padding: 1rem;
-  font-size: 1.5rem;
+  padding: .5rem;
+  font-size: 2rem;
   background-color: light-dark(aliceblue, #00002e);
   grid-area: button;
+  border-radius: 50%;
+  border: 5px solid light-dark(#00002e, aliceblue);
 }
 
 header { 
@@ -50,6 +63,9 @@ header {
 header, section {
   border:  2px solid grey;
   border-radius: 2rem;
+}
+
+nav, header, section {
   background-color: light-dark(white, black);
   color: light-dark(#000, #FFF);
 }
