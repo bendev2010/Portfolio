@@ -21,14 +21,18 @@ nav {
   grid-template-areas: 'button . . list menu';
 }
 
-footer {
-  width: 100%;
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  grid-area: list
 }
 
 #modeswitch {
   padding: 1rem;
   font-size: 1.5rem;
   background-color: light-dark(aliceblue, #00002e);
+  grid-area: button;
 }
 
 header { 
