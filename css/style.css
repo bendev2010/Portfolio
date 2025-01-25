@@ -112,7 +112,7 @@ section {
 section h1 {
   font-size: 3rem;
   color: #078e99;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .about p {
@@ -129,12 +129,8 @@ section h4 span {
 }
 
 .listdiv {
-padding: 20px;
+padding: 1rem;
 margin: .5rem;
-}
-
-.listdiv ul {
-  padding: 5px;
 }
 
 .listdiv ul li {
