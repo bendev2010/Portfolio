@@ -6,7 +6,6 @@
   font-size: 15px;
   color-scheme: light dark;
 }
-
 body {
   /*background: aliceblue;*/
   background: light-dark(aliceblue, #00002e);
