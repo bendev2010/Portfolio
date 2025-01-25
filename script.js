@@ -11,4 +11,3 @@ function colorScheme() {
     }
 }
 //const elements = document.getElementsByTagName("*");
-btn.addEventListener('click', colorScheme())

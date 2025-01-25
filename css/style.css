@@ -73,7 +73,7 @@ header, section {
 .headline h6 {
   font-size: 1.1rem;
   margin: 4rem 0 2rem 0;
-  padding: 1rem;
+  padding: .5rem;
 } 
 
 .skills {
@@ -98,6 +98,10 @@ section h1 {
   font-size: 3rem;
   color: #078e99;
   margin-bottom: 2rem;
+}
+
+.about p {
+  padding: 1rem;
 }
 
 section h4 {
