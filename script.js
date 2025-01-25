@@ -5,10 +5,8 @@ function colorScheme() {
     mode.forEach(element => {
         if (element.style.colorScheme === 'dark') {
             element.style.colorScheme = 'light';
-        } else if (element.style.colorScheme === 'light') {
-            element.style.colorScheme = 'dark';
         } else {
-            window.alert('Error');
+            element.style.colorScheme = 'dark';
         }
     });
 }
