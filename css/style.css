@@ -69,13 +69,13 @@ header, section {
 }
 
 .headline h1 {
-  margin: 0 0 0 40%;
+  margin: 0 0 0 16rem;
   font-size: 3rem; 
 }
 
 .headline h6 {
   font-size: 1.1rem;
-  margin: 4rem 0 2rem 0;
+  margin: 2rem 0;
   padding: .5rem;
 } 
 
@@ -104,7 +104,7 @@ section h1 {
 }
 
 .about p {
-  padding: 1rem;
+  padding: 0 .2rem 1rem;
 }
 
 section h4 {
