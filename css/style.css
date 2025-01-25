@@ -53,7 +53,7 @@ header, section {
 
 .bg_banner img {
   border-radius: 50%;
-  border: light-dark(white, black) double 10px;
+  border: light-dark(#000, #FFF) double 10px;
   height: 10rem;
   width: 10rem;
   position: absolute;
