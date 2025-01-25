@@ -27,8 +27,12 @@ header {
   height: 30rem;
 }
 
-.lightdark {
+.light {
   color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
 }
 
 header, section {
