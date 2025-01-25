@@ -17,10 +17,11 @@ body {
 nav {
   display: grid;
   width: 100%;
-  padding: 0 20%;
+  padding: 0 10%;
+  margin-bottom: 5vh;
   background-color: aliceblue;
   grid-template-areas: 'button . list menu';
-  grid-template-columns: 1fr 4fr 6fr 1fr;
+  grid-template-columns: 2fr 2fr 6fr 1fr;
 }
 
 nav ul {
@@ -114,8 +115,7 @@ nav, header, section {
 
 .skills ul {
   width: 50%;
-  float: left;
-  margin: 2rem;
+  margin: 1rem;
 }
 
 section {
@@ -145,8 +145,12 @@ section h4 span {
 }
 
 .listdiv {
-padding: 1rem;
-margin: .5rem;
+  padding: 1rem;
+  margin: .5rem;
+}
+
+.about .listdiv h1 {
+  display: block;
 }
 
 .listdiv ul li {
