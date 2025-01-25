@@ -45,7 +45,7 @@ nav ul li a {
   font-size: 2rem;
   background-color: light-dark(aliceblue, #00002e);
   grid-area: button;
-  border-radius: 50%;
+  border-radius: 25%;
   border: 5px solid light-dark(#00002e, aliceblue);
 }
 
