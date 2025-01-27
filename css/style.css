@@ -117,6 +117,7 @@ nav, header, section {
 .skills ul {
   width: 50%;
   margin: 1rem;
+  transform: translate(-8rem, 3rem);
 }
 
 section {
