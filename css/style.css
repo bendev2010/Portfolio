@@ -40,6 +40,7 @@ nav ul li a {
 .menu {
   grid-area: menu;
   font-size: 3rem;
+  margin: 0 3rem 0 1rem;
 }
 
 #modeswitch {
@@ -47,8 +48,7 @@ nav ul li a {
   font-size: 2rem;
   background-color: light-dark(aliceblue, #00002e);
   grid-area: button;
-  border-radius: 10%;
-  border: 2.5px solid light-dark(#00002e, aliceblue);
+  border: none;
 }
 
 header { 
@@ -117,7 +117,7 @@ nav, header, section {
 
 .skills ul {
   width: 50%;
-  margin: 1rem;
+  margin: 1.5rem;
   transform: translate(-8rem, 3rem);
 }
 
