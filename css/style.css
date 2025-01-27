@@ -18,9 +18,16 @@ nav {
   width: 100%;
   padding: 0 10%;
   margin-bottom: 5vh;
-  background-color: aliceblue;
   grid-template-areas: 'button . list menu';
   grid-template-columns: 2fr 2fr 6fr 1fr;
+}
+
+#modeswitch {
+  padding: .5rem;
+  font-size: 2rem;
+  background-color: light-dark(aliceblue, #00002e);
+  grid-area: button;
+  border: none;
 }
 
 nav ul {
@@ -43,13 +50,14 @@ nav ul li a {
   margin: 0 3rem 0 1rem;
 }
 
-#modeswitch {
-  padding: .5rem;
-  font-size: 2rem;
-  background-color: light-dark(aliceblue, #00002e);
-  grid-area: button;
+.menubtn {
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+
 
 header { 
   height: 25rem;
