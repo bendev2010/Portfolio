@@ -15,12 +15,9 @@ body {
 }
 
 nav {
-  display: grid;
   width: 100%;
   padding: 0 10%;
   margin-bottom: 5vh;
-  grid-template-areas: 'button menu';
-  grid-template-columns: 2fr 6fr;
 }
 
 #modeswitch {
