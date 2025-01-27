@@ -8,7 +8,6 @@
   color-scheme: light dark;
 }
 body {
-  /*background: aliceblue;*/
   background: light-dark(aliceblue, #00002e);
   padding: 25px;
   font-family: sans-serif;
@@ -34,10 +33,12 @@ nav ul {
 nav ul li a {
   text-decoration: none;
   color: inherit;
+  font-size: 2rem;
 }
 
 .menu {
   grid-area: menu;
+  font-size: 5rem;
 }
 
 #modeswitch {
@@ -45,7 +46,7 @@ nav ul li a {
   font-size: 2rem;
   background-color: light-dark(aliceblue, #00002e);
   grid-area: button;
-  border-radius: 25%;
+  border-radius: 5%;
   border: 5px solid light-dark(#00002e, aliceblue);
 }
 
@@ -147,10 +148,11 @@ section h4 span {
 .listdiv {
   padding: 1rem;
   margin: .5rem;
+  position: relative;
 }
 
 .about .listdiv h1 {
-  display: block;
+  height:100px;
 }
 
 .listdiv ul li {
