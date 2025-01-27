@@ -11,6 +11,7 @@ body {
   background: light-dark(aliceblue, #00002e);
   padding: 25px;
   font-family: sans-serif;
+  color: light-dark(#000, #FFF);
 }
 
 nav {
@@ -18,8 +19,8 @@ nav {
   width: 100%;
   padding: 0 10%;
   margin-bottom: 5vh;
-  grid-template-areas: 'button . list menu';
-  grid-template-columns: 3.75fr 1fr 6fr .25fr;
+  grid-template-areas: 'button list menu';
+  grid-template-columns: 2fr 6fr .25fr;
 }
 
 #modeswitch {
@@ -49,6 +50,7 @@ nav ul li a {
 .menu {
   font-size: 3rem;
   margin: 0 3rem 0 1rem;
+  float: right;
 }
 
 .menubtn {
@@ -57,8 +59,6 @@ nav ul li a {
   background-color: transparent;
   grid-area: menu;
 }
-
-
 
 header { 
   height: 25rem;
@@ -75,11 +75,7 @@ header {
 header, section {
   border:  2px solid grey;
   border-radius: 2rem;
-}
-
-nav, header, section {
   background-color: light-dark(white, black);
-  color: light-dark(#000, #FFF);
 }
 
 .bg_banner {
