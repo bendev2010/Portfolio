@@ -42,10 +42,10 @@ nav ul li a {
   text-decoration: none;
   color: inherit;
   font-size: 2rem;
+  padding: 1rem;
 }
 
 .menu {
-  grid-area: menu;
   font-size: 3rem;
   margin: 0 3rem 0 1rem;
 }
@@ -55,6 +55,8 @@ nav ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: transparent;
+  grid-area: menu;
 }
 
 
