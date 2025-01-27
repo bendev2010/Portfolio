@@ -19,7 +19,7 @@ nav {
   padding: 0 10%;
   margin-bottom: 5vh;
   grid-template-areas: 'button . list menu';
-  grid-template-columns: 2fr 2fr 6fr 1fr;
+  grid-template-columns: 3.75fr 1fr 6fr .25fr;
 }
 
 #modeswitch {
@@ -28,6 +28,7 @@ nav {
   background-color: light-dark(aliceblue, #00002e);
   grid-area: button;
   border: none;
+  cursor: pointer;
 }
 
 nav ul {
@@ -52,9 +53,7 @@ nav ul li a {
 
 .menubtn {
   border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  transform: (1rem, 0);
   background-color: transparent;
   grid-area: menu;
 }
