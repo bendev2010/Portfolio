@@ -19,8 +19,8 @@ nav {
   width: 100%;
   padding: 0 10%;
   margin-bottom: 5vh;
-  grid-template-areas: 'button list menu';
-  grid-template-columns: 2fr 6fr .25fr;
+  grid-template-areas: 'button menu';
+  grid-template-columns: 2fr 6fr;
 }
 
 #modeswitch {
@@ -45,19 +45,6 @@ nav ul li a {
   color: inherit;
   font-size: 2rem;
   padding: 1rem;
-}
-
-.menu {
-  font-size: 3rem;
-  margin: 0 3rem 0 1rem;
-  float: right;
-}
-
-.menubtn {
-  border: none;
-  transform: (1rem, 0);
-  background-color: transparent;
-  grid-area: menu;
 }
 
 header { 
