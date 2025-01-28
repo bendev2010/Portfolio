@@ -9,7 +9,7 @@
 }
 body {
   background: light-dark(aliceblue, #00002e);
-  padding: 2rem;
+  padding: 0 2rem 2rem;
   font-family: sans-serif;
   color: light-dark(#000, #FFF);
 }
