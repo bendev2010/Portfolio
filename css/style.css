@@ -29,12 +29,14 @@ nav {
 
 #modeswitch {
   padding: .5rem;
+  margin: 0 1rem;
   font-size: 2rem;
   color: light-dark(#00002e, aliceblue);
   background-color: light-dark(aliceblue, #00002e);
   grid-area: button;
   border: none;
   cursor: pointer;
+  font-weight: bold;
 }
 
 nav ul {
