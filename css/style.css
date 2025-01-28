@@ -23,6 +23,7 @@ nav {
 #modeswitch {
   padding: .5rem;
   font-size: 2rem;
+  color: light-dark(#00002e, aliceblue);
   background-color: light-dark(aliceblue, #00002e);
   grid-area: button;
   border: none;
@@ -76,7 +77,7 @@ header, section {
 
 .bg_banner img {
   border-radius: 50%;
-  border: light-dark(gold, aliceblue) double 10px;
+  border: light-dark(darkgoldenrod, aliceblue) double 10px;
   height: 10rem;
   width: 10rem;
   position: absolute;
