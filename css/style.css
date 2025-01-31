@@ -17,27 +17,8 @@ body {
 .light {
   color-scheme: light;
 }
-.light #modeswitch span {
-  background-color: blue;
-  float: left;
-  font-size: 1.5rem;
-  border-radius: 50%;
-  width: 20px;
-  height: 50px;
-  padding: 10px;
-}
-
 .dark {
   color-scheme: dark;
-}
-.dark #modeswitch span {
-  background-color: yellow;
-  float: right;
-  border-radius: 50%;
-  width: 20px;
-  height: 50px;
-  padding: 10px;
-  font-size: 1.5rem;
 }
 
 nav {
