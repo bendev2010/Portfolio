@@ -13,7 +13,6 @@ body {
   font-family: sans-serif;
   color: light-dark(#000, #FFF);
 }
-
 .light {
   color-scheme: light;
 }
@@ -28,17 +27,13 @@ nav {
 }
 
 #modeswitch {
-  padding: .5rem;
-  margin: 0 1rem;
-  font-size: 2rem;
-  color: light-dark(#00002e, aliceblue);
+  padding: .2rem;
+  font-size: 2.5rem;
   background-color: light-dark(rgb(106, 208, 242), #000086);
-  grid-area: button;
   border: none;
   border-radius: .5rem;
-  width: 50px;
+  width: 3rem;
   cursor: pointer;
-  font-weight: bold;
 }
 
 nav ul {
@@ -46,7 +41,6 @@ nav ul {
   justify-content: space-around;
   align-items: center;
   list-style-type: none;
-  grid-area: list;
 }
 
 nav ul li a {
