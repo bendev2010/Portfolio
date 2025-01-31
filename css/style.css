@@ -19,9 +19,12 @@ body {
 }
 .light #modeswitch span {
   background-color: blue;
-  float: right;
+  float: left;
+  font-size: 1.5rem;
   border-radius: 50%;
-  font-size: 1.3rem;
+  width: 20px;
+  height: 50px;
+  padding: 10px;
 }
 
 .dark {
@@ -29,9 +32,12 @@ body {
 }
 .dark #modeswitch span {
   background-color: yellow;
-  float: white;
+  float: right;
   border-radius: 50%;
-  font-size: 1.3rem;
+  width: 20px;
+  height: 50px;
+  padding: 10px;
+  font-size: 1.5rem;
 }
 
 nav {
@@ -49,7 +55,7 @@ nav {
   grid-area: button;
   border: none;
   border-radius: .5rem;
-  width: 2rem;
+  width: 50px;
   cursor: pointer;
   font-weight: bold;
 }
