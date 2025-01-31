@@ -19,9 +19,9 @@ function colorScheme() {
 
 function btnChange() {
     if (color === 'dark') {
-        btn.innerHTML = '&#9788; Light';
+        btn.innerHTML = '&#9788;';
     } else {
-        btn.innerHTML = '&#9790; Dark';
+        btn.innerHTML = '&#9790;';
     }
 }
 

@@ -17,8 +17,21 @@ body {
 .light {
   color-scheme: light;
 }
+.light #modeswitch span {
+  background-color: blue;
+  float: right;
+  border-radius: 50%;
+  font-size: 1.3rem;
+}
+
 .dark {
   color-scheme: dark;
+}
+.dark #modeswitch span {
+  background-color: yellow;
+  float: white;
+  border-radius: 50%;
+  font-size: 1.3rem;
 }
 
 nav {
@@ -32,9 +45,11 @@ nav {
   margin: 0 1rem;
   font-size: 2rem;
   color: light-dark(#00002e, aliceblue);
-  background-color: light-dark(aliceblue, #00002e);
+  background-color: light-dark(rgb(106, 208, 242), #000086);
   grid-area: button;
   border: none;
+  border-radius: .5rem;
+  width: 2rem;
   cursor: pointer;
   font-weight: bold;
 }
