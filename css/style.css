@@ -25,11 +25,11 @@ nav {
   padding: 0 5%;
   margin-bottom: 1vh;
 }
+/* make nav with my name as logo */
 
 #modeswitch {
   padding: .2rem;
   font-size: 2.5rem;
-  background-color: light-dark(rgb(106, 208, 242), #000086);
   border: none;
   border-radius: .5rem;
   width: 3rem;
@@ -46,7 +46,7 @@ nav ul {
 nav ul li a {
   text-decoration: none;
   color: inherit;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 1rem;
 }
 
