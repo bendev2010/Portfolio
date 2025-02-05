@@ -47,6 +47,7 @@ nav ul {
 
 nav ul li a {
   color: light-dark(#000, #FFF);
+  text-decoration: none;
 }
  .menubtn {
   grid-area: menu;
@@ -188,7 +189,6 @@ section h4 span {
   nav h1 {
     font-size: 40px;
   } 
-
   .menubtn {
     display: block;
   }
