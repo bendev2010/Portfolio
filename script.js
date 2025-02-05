@@ -1,6 +1,7 @@
 const btn = document.getElementById('modeswitch');
 const mode = document.querySelectorAll('.light')
 const css = document.getElementById('css');
+const mobileNav = document.getElementsById('mobileNav');
 
 let color = '';
 
@@ -30,6 +31,10 @@ btn.addEventListener('click', () => {
     colorScheme();
     btnChange();
 });
+
+function mobileNav() {
+    mobileNav.classList.toggle('none');
+}
 
 function changeGlass() {
     css.href = 'css/glass.css'
