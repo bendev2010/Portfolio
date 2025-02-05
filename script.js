@@ -32,15 +32,15 @@ btn.addEventListener('click', () => {
 });
 
 function changeGlass() {
-    css.href = 'glass.css'
+    css.href = 'css/glass.css'
 }
 
 function changeAnime() {
-    css.href = 'animated.css'
+    css.href = 'css/animated.css'
 }
 
 function changeborder() {
-    css.href = 'borderless.css'
+    css.href = 'css/borderless.css'
 }
 //const elements = document.getElementsByClassName("light");
 //const elements = document.getElementsByTagName("*");
