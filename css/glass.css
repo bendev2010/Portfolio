@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Raleway, sans-serif;
+  }
+  
+  .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 600,
+    'GRAD' 0,
+    'opsz' 24
+  }
+  
+  body {
+    background-color: blue;
+    padding: 1rem;
+  }
+  
+  nav {
+    width: 95%;
+    height: 75px;
+    position: absolute;
+    padding: 1rem;
+    top: 1rem;
+    left: 2.5%;
+    display: grid;
+    grid-template-areas: 'title . nav';
+    font-weight: bold;
+    z-index: 10;
+  }
+  
+  nav, header, section {
+    background-color: rgba(245, 245, 255, 0.3);
+    backdrop-filter: blur(20px);
+    border-radius: 2rem;
+    color: white;
+  }
+  
+  nav h1 {
+    grid-area: title;
+    font-size: 36px;
+  }
+  nav ul {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+   .menubtn {
+    grid-area: menu;
+    display: none;
+    background-color: transparent;
+    border: none;
+  }
+  .menu {
+    float: right;
+  }
+  
+  #modeswitch {
+    display: none;
+  }
+  
+  header { 
+    margin-top: 14rem;
+  }
+  /* If I remove height it kills bg-banner and still looks cool */
+  
+  .bg_banner {
+    position: relative;
+  }
+  .bg_banner img {
+    border-radius: 50%;
+    border: white solid 5px;
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    top: calc(100% - 5rem);
+    left: 5%;
+  } 
+  
+  .headline {
+    padding: 1rem;
+  }
+  .headline h1 {
+    margin-left: 16rem;
+    font-size: 2.25rem; 
+  }
+  .headline h6 {
+    font-size: 1.1rem;
+    margin: 2rem 0;
+    padding: .5rem;
+  } 
+  
+  .skills {
+    display: flex;
+    border-top: solid 1px grey;
+    transform: translateX(-1rem);
+  }
+  
+  .skills ul {
+    width: 50%;
+    margin: 1.5rem;
+    transform: translate(-8rem, 3rem);
+  }
+  
+  section {
+    margin: 20px 0;
+    padding: 20px;
+  }
+  
+  section h1 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about p {
+    padding: 0 .2rem 1rem;
+  }
+  
+  section h4 {
+    font-weight: normal;
+  }
+  
+  section h4 span {
+    color: blue;
+    font-weight: bold;
+  }
+  
+  .listdiv {
+    padding: 1rem;
+    margin: .5rem;
+    position: relative;
+  }
+  
+  .about .listdiv h1 {
+    height:100px;
+  }
+  
+  .listdiv ul li {
+    padding: 10px;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    :root {
+      font-size: 18px;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    :root {
+      font-size: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    :root {
+      font-size: 8px;
+    }
+  }
+  
+  @media screen and (max-width: 750px) {
+    :root {
+      font-size: 10px;
+    }
+    nav ul {
+      display: none;
+    }
+    nav h1 {
+      font-size: 40px;
+    } 
+  
+    .menubtn {
+      display: block;
+    }
+    nav {
+      grid-template-areas: 'title . menu';
+    }
+  }
+  
+  @media screen and (max-width: 350px) {
+    nav {
+      height: 60px;
+    }
+  }

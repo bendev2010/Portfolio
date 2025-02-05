@@ -1,5 +1,6 @@
 const btn = document.getElementById('modeswitch');
 const mode = document.querySelectorAll('.light')
+const css = document.getElementById('css');
 
 let color = '';
 
@@ -30,5 +31,16 @@ btn.addEventListener('click', () => {
     btnChange();
 });
 
+function changeGlass() {
+    css.href = 'glass.css'
+}
+
+function changeAnime() {
+    css.href = 'animated.css'
+}
+
+function changeborder() {
+    css.href = 'borderless.css'
+}
 //const elements = document.getElementsByClassName("light");
 //const elements = document.getElementsByTagName("*");
