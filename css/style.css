@@ -45,11 +45,11 @@ nav ul {
   list-style-type: none;
 }
 
-nav ul li, .mobileNav li {
+nav ul li /*.mobileNav li */{
   cursor: pointer;
 }
 
-nav ul li a, .mobileNav li a {
+nav ul li a /*.mobileNav li a*/ {
   color: light-dark(#000, #FFF);
   text-decoration: none;
   
@@ -79,8 +79,9 @@ nav ul li a, .mobileNav li a {
   display: none;
 }
 
-.mobileNav {
+/*.mobileNav {
   width: 100%;
+  grid-area: none;
   height: calc(100vh - 75px);
   position: fixed;
   top: 75px;
@@ -92,7 +93,7 @@ nav ul li a, .mobileNav li a {
   list-style-type: none;
   background-color: light-dark(aliceblue, #00002e);
   font-size: 3rem;
-}
+}*/
 
 header { 
   height: 25rem;
