@@ -44,6 +44,10 @@ nav ul {
   align-items: center;
   list-style-type: none;
 }
+
+nav ul li a {
+  color: light-dark(#000, #FFF);
+}
  .menubtn {
   grid-area: menu;
   display: none;
@@ -62,12 +66,12 @@ nav ul {
   border-radius: .5rem;
   width: 3rem;
   cursor: pointer;
+  background-color: none;
 }
-
-
 
 header { 
   height: 25rem;
+  margin-top: 12.5rem;
 }
 /* If I remove height it kills bg-banner and still looks cool */
 header, section {
