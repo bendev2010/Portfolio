@@ -21,9 +21,37 @@ body {
 }
 
 nav {
-  width: 100%;
-  padding: 0 5%;
-  margin-bottom: 1vh;
+  width: 95%;
+  height: 75px;
+  position: fixed;
+  padding: 1rem;
+  top: 1rem;
+  left: 2.5%;
+  display: grid;
+  grid-template-areas: 'title . nav';
+  font-weight: bold;
+  z-index: 10;
+}
+
+nav h1 {
+  grid-area: title;
+  font-size: 36px;
+}
+nav ul {
+  grid-area: nav;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+ .menubtn {
+  grid-area: menu;
+  display: none;
+  background-color: transparent;
+  border: none;
+}
+.menu {
+  float: right;
 }
 /* make nav with my name as logo */
 
@@ -36,19 +64,7 @@ nav {
   cursor: pointer;
 }
 
-nav ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style-type: none;
-}
 
-nav ul li a {
-  text-decoration: none;
-  color: inherit;
-  font-size: 1.5rem;
-  padding: 1rem;
-}
 
 header { 
   height: 25rem;
@@ -161,6 +177,19 @@ section h4 span {
 @media screen and (max-width: 750px) {
   :root {
     font-size: 10px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav h1 {
+    font-size: 40px;
+  } 
+
+  .menubtn {
+    display: block;
+  }
+  nav {
+    grid-template-areas: 'title . menu';
   }
 }
 
