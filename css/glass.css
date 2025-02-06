@@ -3,15 +3,7 @@
     margin: 0;
     font-family: Raleway, sans-serif;
   }
-  
-  .material-symbols-outlined {
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 600,
-    'GRAD' 0,
-    'opsz' 24
-  }
-  
+
   body {
     background-color: blue;
     background: url(../images/glassbg.jpg) no-repeat center center/cover;
@@ -97,7 +89,7 @@
   }
   .headline h6 {
     font-size: 1.1rem;
-    margin: 2rem 0;
+    margin: 2rem 0 0 0;
     padding: .5rem;
   } 
   
@@ -134,7 +126,7 @@
     position: relative;
   }
   .listdiv ul li {
-    padding: 10px;
+    padding: 5px;
   }
   
   @media screen and (min-width: 1200px) {
