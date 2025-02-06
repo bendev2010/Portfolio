@@ -172,4 +172,7 @@
     nav {
       height: 60px;
     }
+    .menubtn {
+      transform: translateY(-7px);
+    }
   }
