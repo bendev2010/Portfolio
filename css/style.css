@@ -75,26 +75,6 @@ nav ul li a {
   background-color: transparent;
 }
 
-.none {
-  display: none;
-}
-
-/*.mobileNav {
-  width: 100%;
-  grid-area: none;
-  height: calc(100vh - 75px);
-  position: fixed;
-  top: 75px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  z-index: 9;
-  list-style-type: none;
-  background-color: light-dark(aliceblue, #00002e);
-  font-size: 3rem;
-}*/
-
 header { 
   height: 25rem;
   margin-top: 125px;

@@ -22,7 +22,6 @@
     height: 75px;
     position: absolute;
     padding: 1rem;
-    top: 1rem;
     left: 2.5%;
     display: grid;
     grid-template-areas: 'title . nav';
@@ -33,6 +32,7 @@
   nav, header, section {
     background-color: rgba(245, 245, 255, 0.3);
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border-radius: 2rem;
     color: white;
   }
@@ -68,7 +68,7 @@
   }
   
   header { 
-    margin-top: 14rem;
+    margin-top: calc(6rem + 75px);
   }
   /* If I remove height it kills bg-banner and still looks cool */
   
@@ -103,7 +103,7 @@
     border-top: solid 1px grey;
     transform: translateX(-1rem);
   }
-  
+
   .skills ul {
     width: 50%;
     margin: 1.5rem;
@@ -117,7 +117,6 @@
   
   section h1 {
     font-size: 3rem;
-    color: white;
     margin-bottom: 1.5rem;
   }
   
@@ -130,7 +129,7 @@
   }
   
   section h4 span {
-    color: blue;
+    color: rgb(169, 64, 255);
     font-weight: bold;
   }
   
@@ -139,11 +138,7 @@
     margin: .5rem;
     position: relative;
   }
-  
-  .about .listdiv h1 {
-    height:100px;
-  }
-  
+
   .listdiv ul li {
     padding: 10px;
   }
