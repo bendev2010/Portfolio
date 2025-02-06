@@ -15,6 +15,8 @@
   body {
     background-color: blue;
     background: url(../images/images.png) no-repeat center center/cover;
+    height: 100vh;
+    overflow: scroll;
   }
 
   body, nav, .headline, .listdiv {
