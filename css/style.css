@@ -155,9 +155,8 @@ section h4 {
   font-weight: normal;
 }
 
-section h4 span {
+section h4 strong {
   color: #09c1d0;
-  font-weight: bold;
 }
 
 .listdiv {
