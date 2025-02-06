@@ -18,7 +18,6 @@ function colorScheme() {
         }
     });
 }
-
 function btnChange() {
     if (color === 'dark') {
         btn.innerHTML = '&#9788;';
@@ -31,10 +30,6 @@ btn.addEventListener('click', () => {
     colorScheme();
     btnChange();
 });
-
-function mobileNav() {
-    mobileNav.classList.toggle('none');
-}
 
 function changeGlass() {
     css.href = 'css/glass.css'

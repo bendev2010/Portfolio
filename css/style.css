@@ -45,11 +45,11 @@ nav ul {
   list-style-type: none;
 }
 
-nav ul li /*.mobileNav li */{
+nav ul li {
   cursor: pointer;
 }
 
-nav ul li a /*.mobileNav li a*/ {
+nav ul li a {
   color: light-dark(#000, #FFF);
   text-decoration: none;
   
