@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     font-family: Raleway, sans-serif;
+    color: white !important;
   }
 
   body {
@@ -30,7 +31,6 @@
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     border-radius: 2rem;
-    color: white;
   }
   
   nav h1 {
@@ -46,7 +46,6 @@
   }
   
   nav ul li a {
-    color: white;
     text-decoration: none;
   }
    .menubtn {
@@ -95,7 +94,7 @@
   
   .skills {
     display: flex;
-    border-top: solid 1px grey;
+    border-top: solid 1px white;
     transform: translateX(-1rem);
   }
 
