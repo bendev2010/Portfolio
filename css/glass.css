@@ -27,8 +27,8 @@
   
   nav, header, section {
     background-color: rgba(245, 245, 255, 0.3);
-    backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
     border-radius: 2rem;
     color: white;
   }
@@ -147,7 +147,7 @@
       display: none;
     }
     nav h1 {
-      font-size: 40px;
+      font-size: 50px;
     } 
   
     .menubtn {
