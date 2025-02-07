@@ -52,8 +52,19 @@ nav ul li {
 nav ul li a {
   color: light-dark(#000, #FFF);
   text-decoration: none;
-  
+  transition: 1s;
 }
+
+#glasslink:hover {
+  margin: 0 5px;
+  padding: 5px;
+  background-color: rgba(245, 245, 255, 0.3);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-radius: 2rem;
+  transform: 1s;
+}
+
  .menubtn {
   grid-area: menu;
   display: none;
