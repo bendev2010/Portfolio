@@ -10,64 +10,64 @@
   <link href="https://fonts.googleapis.com/css2?family=Borel&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link id="css" href="css/style.css" rel="stylesheet">
 </head>
-<body class="light">
+<body class="scheme">
   <nav>
     <h1>Portfolio</h1>
     <ul>
       <li><a href="index.html">Normal</a></li>
       <li onclick="changeGlass()" id="glasslink">Glass</li><!-- Make glass + animation-->
-      <li>Flow</li>
+      <li onclick="changeNeu()" id="neulink">Neu</li>
       <li><a href="projects.html">Projects</a></li>
       <li><a>
-        <button id="modeswitch" class="light">
+        <button id="modeswitch" class="scheme" onclick="changeMode()">
           <span id="btnicon">&#9790;</span>
         </button>
        </a></li>
     </ul>
     <a class="menubtn" href="javascript:void(0)">
-      <svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF" class="menu" >
+      <svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960" width="40px" fill="#000" class="menu" >
         <path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/>
       </svg>
     </a>
   </nav>
 
-  <header class="light">
+  <header class="scheme">
     <div class="bg_banner">
       <img src="images/benedictnewton.jpg" alt="Benedict Newton">
     </div>
     <div class="headline">
       <h1>Benedict Newton</h1>
       <h6>Determined web developer and programmer with experience creating many websites and
-      programs in and out of school.</h6>
+      programs.</h6>
     </div>
   </header>
 
 <!--Body Sections-->
-  <section class="about light">
+  <section class="about scheme">
     <!-- Add skills could have border down middle and split off-->
     <h1>About</h1>
     <p>
       From a young age, I've been curious about technology and how it can improve lives. Because of this I've put in hundreds or even thousands of hours learning about computers, programming, and web development with the goal of working at a large tech company or maybe starting my own. I have taken classes like Web Development and Computer Programming and skipped two grades to further my education. These classes have all provided skills such as collaboration, problem solving and essential coding principles. As I continue to grow I hope to learn more by taking more courses and taking an internship to achieve my goals.
     </p>
-    <div class="skills listdiv">
-      <h1>Skills</h1>
-      <br>
-      <ul class="skill1">
-        <li>Knowledge of Software (e.g. Adobe Suite, Microsoft Suite)</li>
-        <li>Website Creation</li>
-        <li>HTML, CSS, JS, Python, React</li>
-        <li>Fast Typing</li>
-      </ul>
-      <ul class="skill2">
-        <li>Critical Thinking</li>
-        <li>Problem Solving</li>
-        <li>Collaboration</li>
-        <li>Creativity</li>
-      </ul>
-    </div>
   </section>
 
-  <section class="experience light">
+  <section class="skills scheme">
+    <h1>Skills</h1>
+    <br>
+    <ul class="skill1">
+      <li>Knowledge of Software (e.g. Adobe Suite, Microsoft Suite)</li>
+      <li>Website Creation</li>
+      <li>HTML, CSS, JS, Python, React</li>
+      <li>Fast Typing</li>
+    </ul>
+    <ul class="skill2">
+      <li>Critical Thinking</li>
+      <li>Problem Solving</li>
+      <li>Collaboration</li>
+      <li>Creativity</li>
+    </ul>
+  </section>
+  <section class="experience scheme">
     <h1>Work Experience</h1>
     <div class="listdiv">
       <h4><strong>Teen Entreneurship, Saratoga Springs</strong> - Web Development Intern</h4>
@@ -85,7 +85,7 @@
     </div>   
   </section>
 
-  <section class="Education light">
+  <section class="Education scheme">
     <h1>Education</h1>
     <div class="listdiv">
       <h4><strong>Utah Valley University</strong> - Concurrent Enrollment</h4>

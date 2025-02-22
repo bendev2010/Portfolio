@@ -1,23 +1,26 @@
 const btn = document.getElementById('modeswitch');
-const mode = document.querySelectorAll('.light')
+const mode = document.querySelectorAll('.scheme');
 const css = document.getElementById('css');
-const mobileNav = document.getElementsById('mobileNav');
+const mobileNav = document.getElementById('mobileNav');
 
-let color = '';
+let color = 'light';
 
 function colorScheme() {
-    mode.forEach(element => {
-        if (element.classList.contains('dark')) {
-            element.classList.remove('dark');
-            element.classList.add('light');
-            color = 'light';
-        } else {
-            element.classList.remove('light');
-            element.classList.add('dark');
-            color = 'dark';
-        }
-    });
+    if (color === 'light') {
+        document.documentElement.style.setProperty('--bg-color', 'black');
+        document.documentElement.style.setProperty('--body-bg-color', '#00002e');
+        document.documentElement.style.setProperty('--text-color', '#FFF');
+        btn.style.color = 'white';
+        color = 'dark';
+    } else {
+        document.documentElement.style.setProperty('--bg-color', 'white');
+        document.documentElement.style.setProperty('--body-bg-color', 'aliceblue');
+        document.documentElement.style.setProperty('--text-color', '#000');
+        btn.style.color = 'black';
+        color = 'light';
+    }
 }
+
 function btnChange() {
     if (color === 'dark') {
         btn.innerHTML = '&#9788;';
@@ -32,15 +35,9 @@ btn.addEventListener('click', () => {
 });
 
 function changeGlass() {
-    css.href = 'css/glass.css'
+    css.href = 'css/glass.css';
 }
 
-function changeAnime() {
-    css.href = 'css/animated.css'
+function changeNeu() {
+    css.href = 'css/neu.css';
 }
-
-function changeborder() {
-    css.href = 'css/borderless.css'
-}
-//const elements = document.getElementsByClassName("light");
-//const elements = document.getElementsByTagName("*");

@@ -1,36 +1,31 @@
 * {
-    box-sizing: border-box;
     margin: 0;
-    font-family: Raleway, sans-serif;
-    color: white !important;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
   }
-
+  :root {
+    font-size: 15px;
+    color-scheme: light dark;
+  }
   body {
-    background-color: blue;
-    background: url(../images/glassbg.jpg) no-repeat center center/cover;
-    background-attachment: fixed;
+    background: aliceblue;
+    padding: 0 2rem 2rem;
+    font-family: sans-serif;
+    color: #000;
   }
 
-  body, nav, .headline, .listdiv {
-    padding: 1rem;
-  }
-  
   nav {
     width: 95%;
     height: 75px;
     position: absolute;
+    padding: 1rem;
+    top: 0;
     left: 2.5%;
     display: grid;
     grid-template-areas: 'title . nav';
+    align-items: center;
     font-weight: bold;
     z-index: 10;
-  }
-  
-  nav, header, section {
-    background-color: rgba(245, 245, 255, 0.3);
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
-    border-radius: 2rem;
   }
   
   nav h1 {
@@ -42,41 +37,64 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 50px;
     list-style-type: none;
+    border-radius: 50px;
+    background: #efefff;
+    box-shadow:  21px 21px 42px #bfbfcc,
+                -21px -21px 42px #ffffff;
+  }
+  
+  nav ul li {
+    cursor: pointer;
   }
   
   nav ul li a {
+    color: #000;
     text-decoration: none;
   }
+  
    .menubtn {
     grid-area: menu;
     display: none;
     background-color: transparent;
     border: none;
+    z-index: 10;
   }
   .menu {
     float: right;
-    fill: white;
   }
-  
+  /* make nav with my name as logo */
   #modeswitch {
     display: none;
   }
   
   header { 
-    margin-top: calc(6rem + 75px);
+    height: 25rem;
+    margin-top: 100px;
   }
-
-  header h1, section h1 {
-    font-size: 2.25rem;
+  /* If I remove height it kills bg-banner and still looks cool */
+  header, section {
+    border-radius: 37px;
+    background: #efefff;
+    box-shadow:  21px 21px 42px #bfbfcc,
+                -21px -21px 42px #ffffff;
   }
-  /* If I remove height it kills bg-banner and still looks cool */ 
+  
   .bg_banner {
+    background-color: aliceblue;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    background-image: url('../images/banner.jpg');
+    background-size: cover;
+    background-position: 30%;
     position: relative;
+    height: 50%;
+    width: 100%;
   }
+  
   .bg_banner img {
     border-radius: 50%;
-    border: white solid 5px;
     height: 10rem;
     width: 10rem;
     position: absolute;
@@ -84,35 +102,44 @@
     left: 5%;
   } 
   
-  .headline h1 {
-    margin-left: 16rem;
+  .headline {
+    padding: 1rem;
   }
+  
+  .headline h1 {
+    margin: 0 0 0 16rem;
+    font-size: 2.25rem; 
+  }
+  
   .headline h6 {
     font-size: 1.1rem;
-    margin: 2rem 0 0 0;
+    margin: 2rem 0;
+    padding: .5rem;
   } 
-  
-  .skills {
-    display: flex;
-    transform: translateX(-1rem);
-    margin-left: 1rem;
-  }
+
+.skills {
+    height: 17rem;
+}
 
   .skills ul {
-    width: 50%;
-    margin: 1.5rem;
-    transform: translate(-7rem, 2rem);
+    width: 40%;
+    margin: 1rem;
+    float: left;
+    transform: translateY(-2.2rem);
   }
-  
-.skills ul li {
-    padding: 5px;
+
+  .skills ul li {
+    padding: 2px;
   }
 
   section {
-    margin: 20px 0;
     padding: 20px;
+    margin: 20px 0;
   }
+  
   section h1 {
+    font-size: 3rem;
+    color: #078e99;
     margin-bottom: 1.5rem;
   }
   
@@ -123,13 +150,23 @@
   section h4 {
     font-weight: normal;
   }
-
+  
+  section h4 strong {
+    color: #09c1d0;
+  }
+  
   .listdiv {
+    padding: 1rem;
     margin: .5rem;
     position: relative;
   }
+  
+  .about .listdiv h1 {
+    height: 100px;
+  }
+  
   .listdiv ul li {
-    padding: 5px;
+    padding: 10px;
   }
   
   @media screen and (min-width: 1200px) {
@@ -150,9 +187,8 @@
       display: none;
     }
     nav h1 {
-      font-size: 50px;
+      font-size: 40px;
     } 
-  
     .menubtn {
       display: block;
     }
@@ -163,11 +199,5 @@
   @media screen and (max-width: 450px) {
     :root {
       font-size: 8px;
-    }
-    nav {
-      height: 60px;
-    }
-    .menubtn {
-      transform: translateY(-7px);
     }
   }
