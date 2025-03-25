@@ -11,97 +11,88 @@
   <link id="css" href="css/style.css" rel="stylesheet">
 </head>
 <body class="scheme">
-  <nav>
-    <h1>Portfolio</h1>
-    <ul>
-      <li><a href="index.html">Normal</a></li>
-      <li onclick="changeGlass()" id="glasslink">Glass</li><!-- Make glass + animation-->
-      <li onclick="changeNeu()" id="neulink">Neu</li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a>
-        <button id="modeswitch" class="scheme" onclick="changeMode()">
-          <span id="btnicon">&#9790;</span>
-        </button>
-       </a></li>
-    </ul>
-    <a class="menubtn" href="javascript:void(0)">
-      <svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960" width="40px" fill="#000" class="menu" >
-        <path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/>
-      </svg>
-    </a>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="images/benedictnewton.jpg" alt="Benedict Newton">
+        <h1>Benedict Newton</h1>
+      </div>
+      <ul>
+        <li><a href="index.html">Normal</a></li>
+        <li onclick="changeGlass()" id="glasslink">Glass</li><!-- Make glass + animation-->
+        <li onclick="changeNeu()" id="neulink">Neu</li>
+        <li><button id="modeswitch" class="scheme" onclick="changeMode()">
+            <span id="btnicon">&#9790;</span>
+          </button></li>
+      </ul>
+      <a class="menubtn" href="javascript:void(0)">
+        <svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960" width="40px" fill="#000" class="menu" >
+          <path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/>
+        </svg>
+      </a>
   </nav>
-
-  <header class="scheme">
-    <div class="bg_banner">
-      <img src="images/benedictnewton.jpg" alt="Benedict Newton">
-    </div>
-    <div class="headline">
-      <h1>Benedict Newton</h1>
-      <h6>Determined web developer and programmer with experience creating many websites and
-      programs.</h6>
-    </div>
-  </header>
+</header>
 
 <!--Body Sections-->
   <section class="about scheme">
     <!-- Add skills could have border down middle and split off-->
-    <h1>About</h1>
+    <h2>About</h2>
+    <br>
     <p>
-      From a young age, I've been curious about technology and how it can improve lives. Because of this I've put in hundreds or even thousands of hours learning about computers, programming, and web development with the goal of working at a large tech company or maybe starting my own. I have taken classes like Web Development and Computer Programming and skipped two grades to further my education. These classes have all provided skills such as collaboration, problem solving and essential coding principles. As I continue to grow I hope to learn more by taking more courses and taking an internship to achieve my goals.
+      Since being a child I’ve had an inquisitive mind seeking to understand and learn more than what was just taught in the classroom.
+      I've always been interested by technology, how it works and how it affects society.
+      Because of this I've spent many hours learning about computers, programming, and web development with the goal of working at a large tech company or perhaps starting my own.
+      I have taken classes like Web Development and Computer Programming and skipped two grades to further my education.
+      In the future, I hope to learn more by taking more courses and taking an internship to achieve my goals.
     </p>
   </section>
 
   <section class="skills scheme">
-    <h1>Skills</h1>
+    <h2>Skills</h2>
     <br>
     <ul class="skill1">
-      <li>Knowledge of Software (e.g. Adobe Suite, Microsoft Suite)</li>
-      <li>Website Creation</li>
-      <li>HTML, CSS, JS, Python, React</li>
+      <li class="iconli">
+        <details>
+          <summary class="skillicons">
+            <span><img src="icons/html5-brands.svg" class="icon" alt="HTML5"></span>
+            <span><img src="icons/css3-alt-brands.svg" class="icon" alt="CSS3"></span>
+            <span><img src="icons/square-js-brands.svg" class="icon" alt="JS"></span>
+            <span><img src="icons/python-brands.svg" class="icon" alt="Python"></span>
+            <span><img src="icons/react-brands.svg" class="icon" alt="React"></span>
+            <span><img src="icons/office-365-brands.png" class="icon" alt="Office 365" id="office"></span>
+            <span><img src="icons/adobe.jpeg" class="icon" alt="Adobe Suite"></span>
+            <span><img src="icons/github-brands.svg" class="icon" alt="Github"></span>
+            <span><img src="icons/git-brands.svg" class="icon" alt="Git"></span>
+          </summary>
+          <p>HTML, CSS, JS, Python, React, Office 365, Adobe Suite, Github, Git</p>
+        </details>
+      </li>
       <li>Fast Typing</li>
-    </ul>
-    <ul class="skill2">
       <li>Critical Thinking</li>
       <li>Problem Solving</li>
       <li>Collaboration</li>
       <li>Creativity</li>
     </ul>
   </section>
-  <section class="experience scheme">
-    <h1>Work Experience</h1>
-    <div class="listdiv">
-      <h4><strong>Teen Entreneurship, Saratoga Springs</strong> - Web Development Intern</h4>
-      <ul>
-        <li>Experience making professional websites for a business.</li>
-        <li>In progress</li>
-      </ul>
-    </div>
-    <div class="listdiv">
-      <h4><strong>IMAA, Saratoga Springs</strong> - Junior Instructor/Student</h4>
-      <ul>
-        <li>Helped teach children and helped with technology and various software.</li>
-        <li>Learned about the operations of a business.</li>
-      </ul>
-    </div>   
+
+  <section class="projects scheme">
+    <h2>Projects</h2><br>
+    <ul class="skill1">
+      <li><a href="index.html">Portfolio</a></li>
+      <li><a href="">Tigers Cry Too</a></li>
+      <li><a href="">To do list and Pomodoro Timer</a></li>
+      <li><a href="">Dad thing</a></li>
+      <li><a href="">Peace Sanctuary</a></li>
+      <li><a href="">And more...</a></li>
+    </ul>
   </section>
 
-  <section class="Education scheme">
-    <h1>Education</h1>
-    <div class="listdiv">
-      <h4><strong>Utah Valley University</strong> - Concurrent Enrollment</h4>
-      <ul>
-        <li>At UVU, I have taken Computer Programming, Chemistry (CHEM 1010) and Math (MATH 1010/1050).</li>
-      </ul>
-    </div>
-    <div class="listdiv">
-      <h4><strong>Westlake High School</strong> - Student</h4>
-      <ul>
-        <li> GPA: 3.94. I have acheived Web Development CTE Pathway and I am working towards the Programming & Software Development and Cybersecurity pathways.
-          I've also been part of NHS and NSHSS.
-        </li>
-      </ul>
-    </div>
-  </section>
+  <footer>
+    <h6>Reach me at:</h6>
+    <p>bendev2024@gmail.com</p>
+    <a href="https://github.com/bendev2010"><img src="icons/github-brands.svg" class="icon"></a>
+  </footer>
+  
   <script src="script.js"></script>
 </body>
 </html>

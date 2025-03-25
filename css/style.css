@@ -22,24 +22,41 @@ body {
   color-scheme: light;
 }
 
+header {
+  background-color: var(--bg-color);
+  width: 100%;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 2rem;
+}
+
 nav {
   width: 95%;
   height: 75px;
-  position: absolute;
-  padding: 1rem;
-  top: 0;
-  left: 2.5%;
   display: grid;
   grid-template-areas: 'title . nav';
   align-items: center;
   font-weight: bold;
-  z-index: 10;
 }
 
 nav h1 {
-  grid-area: title;
-  font-size: 36px;
+  font-size: 1.5rem;
+  padding: 0 25px;
 }
+
+.logo {
+  grid-area: title;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+}
+
 nav ul {
   grid-area: nav;
   display: flex;
@@ -53,7 +70,7 @@ nav ul li {
   cursor: pointer;
 }
 
-nav ul li a {
+a {
   color: var(--text-color);
   text-decoration: none;
 }
@@ -79,103 +96,66 @@ nav ul li a {
   background-color: transparent;
 }
 
-header { 
-  height: 25rem;
-  margin-top: 100px;
-  padding: 0 1rem;
-}
+
 /* If I remove height it kills bg-banner and still looks cool */
-header, section {
+ section {
   border-radius: 2rem;
   background-color: var(--bg-color);
-}
-
-.bg_banner {
-  background-color: aliceblue;
-  border-top-right-radius: 2rem;
-  border-top-left-radius: 2rem;
-  background-image: url('../images/banner.jpg');
-  background-size: cover;
-  background-position: 30%;
-  position: relative;
-  height: 50%;
-  width: 100%;
-}
-
-.bg_banner img {
-  border-radius: 50%;
-  height: 10rem;
-  width: 10rem;
-  position: absolute;
-  top: calc(100% - 5rem);
-  left: 5%;
-} 
-
-.headline {
-  padding: 1rem;
-}
-
-.headline h1 {
-  margin: 0 0 0 16rem;
-  font-size: 2.25rem; 
-}
-
-.headline h6 {
-  font-size: 1.1rem;
-  margin: 2rem 0;
-  padding: .5rem;
-} 
-
-.skills {
-  height: 17rem;
-}
-
-.skills ul {
-  width: 40%;
-  margin: 1rem;
-  float: left;
-  transform: translateY(-2.2rem);
-}
-
-.skills ul li {
-  padding: 2px;
-}
-
-section {
   padding: 20px;
   margin: 20px 0;
-}
-
-section h1 {
-  font-size: 3rem;
-  color: #078e99;
-  margin-bottom: 1.5rem;
 }
 
 .about p {
   padding: 0 .2rem 1rem;
 }
 
-section h4 {
-  font-weight: normal;
+.skills, .projects {
+  width: 48%;
 }
 
-section h4 strong {
-  color: #09c1d0;
+.skills {
+  float: left;
 }
 
-.listdiv {
-  padding: 1rem;
-  margin: .5rem;
-  position: relative;
+.icon {
+  width: 2rem;
+  height: 2rem;
+  padding: 0 .1rem;
 }
 
-.about .listdiv h1 {
-  height: 100px;
+.iconli {
+  list-style: none;
+  margin-bottom: 10px;
 }
 
-.listdiv ul li {
-  padding: 10px;
+.iconli {
+  transform: translateX( -20px);
+}
+
+.iconli img {
+  transform: translateY(15px);
+}
+
+details p {
+  font-size: .8rem;
+  transform: translateY(1.75rem);
+}
+
+section ul li {
+  padding: 2px;
+}
+
+.projects {
+  float: right;
+}
+
+footer {
+  background-color: var(--bg-color);
+  width: 100%;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 2rem;
+  float: left;
 }
 
 @media screen and (min-width: 1200px) {
@@ -196,13 +176,18 @@ section h4 strong {
     display: none;
   }
   nav h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
   } 
   .menubtn {
     display: block;
   }
   nav {
     grid-template-areas: 'title . menu';
+  }
+
+  .skills, .projects {
+    width: 100%;
+    float: left;
   }
 }
 @media screen and (max-width: 450px) {
