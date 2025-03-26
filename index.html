@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Borel&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link id="css" href="css/style.css" rel="stylesheet">
 </head>
-<body class="scheme">
+<body>
   <header>
     <nav>
       <div class="logo">
@@ -21,9 +21,6 @@
         <li><a href="index.html">Normal</a></li>
         <li onclick="changeGlass()" id="glasslink">Glass</li><!-- Make glass + animation-->
         <li onclick="changeNeu()" id="neulink">Neu</li>
-        <li><button id="modeswitch" class="scheme" onclick="changeMode()">
-            <span id="btnicon">&#9790;</span>
-          </button></li>
       </ul>
       <a class="menubtn" href="javascript:void(0)">
         <svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960" width="40px" fill="#000" class="menu" >
@@ -34,7 +31,7 @@
 </header>
 
 <!--Body Sections-->
-  <section class="about scheme">
+  <section class="about">
     <!-- Add skills could have border down middle and split off-->
     <h2>About</h2>
     <br>
@@ -47,7 +44,7 @@
     </p>
   </section>
 
-  <section class="skills scheme">
+  <section class="skills">
     <h2>Skills</h2>
     <br>
     <ul class="skill1">
@@ -60,7 +57,7 @@
             <span><img src="icons/python-brands.svg" class="icon" alt="Python"></span>
             <span><img src="icons/react-brands.svg" class="icon" alt="React"></span>
             <span><img src="icons/office-365-brands.png" class="icon" alt="Office 365" id="office"></span>
-            <span><img src="icons/adobe.jpeg" class="icon" alt="Adobe Suite"></span>
+            <span><img src="icons/adobe.png" class="icon" alt="Adobe Suite"></span>
             <span><img src="icons/github-brands.svg" class="icon" alt="Github"></span>
             <span><img src="icons/git-brands.svg" class="icon" alt="Git"></span>
           </summary>
@@ -75,22 +72,25 @@
     </ul>
   </section>
 
-  <section class="projects scheme">
+  <section class="projects">
     <h2>Projects</h2><br>
     <ul class="skill1">
       <li><a href="index.html">Portfolio</a></li>
       <li><a href="">Tigers Cry Too</a></li>
       <li><a href="">To do list and Pomodoro Timer</a></li>
-      <li><a href="">Dad thing</a></li>
       <li><a href="">Peace Sanctuary</a></li>
       <li><a href="">And more...</a></li>
     </ul>
   </section>
 
   <footer>
-    <h6>Reach me at:</h6>
-    <p>bendev2024@gmail.com</p>
-    <a href="https://github.com/bendev2010"><img src="icons/github-brands.svg" class="icon"></a>
+    <ul>
+      <li><h4>Benedict Newton</h4></li>
+      <li><div class="email">
+        <img class="icon" src="icons/square-envelope-solid.svg"> <a href="mailto:bendev2024@gmail.com">bendev2024@gmail.com</a>
+      </div></li>
+      <li><a href="https://github.com/bendev2010"><img src="icons/github-brands.svg" class="icon"></a></li>
+    </ul> 
   </footer>
   
   <script src="script.js"></script>

@@ -6,20 +6,11 @@
 :root {
   font-size: 15px;
   --bg-color: white;
-  --bg-dark: black;
-  --body-bg-color: aliceblue;
-  --body-bg-dark: #00002e;
-  --text-color: #000;
-  --text-dark: #FFF;
 }
 body {
-  background: var(--body-bg-color);
+  background: aliceblue;
   padding: 0 2rem 2rem;
-  font-family: sans-serif;
-  color: var(--text-color);
-}
-.scheme {
-  color-scheme: light;
+  color: black;
 }
 
 header {
@@ -65,13 +56,12 @@ nav ul {
   align-items: center;
   list-style-type: none;
 }
-
 nav ul li {
   cursor: pointer;
 }
 
 a {
-  color: var(--text-color);
+  color: black;
   text-decoration: none;
 }
 
@@ -82,22 +72,7 @@ a {
   border: none;
   z-index: 10;
 }
-.menu {
-  float: right;
-}
-/* make nav with my name as logo */
-#modeswitch {
-  padding: .2rem;
-  font-size: 2.5rem;
-  border: none;
-  border-radius: .5rem;
-  width: 3rem;
-  cursor: pointer;
-  background-color: transparent;
-}
 
-
-/* If I remove height it kills bg-banner and still looks cool */
  section {
   border-radius: 2rem;
   background-color: var(--bg-color);
@@ -105,12 +80,13 @@ a {
   margin: 20px 0;
 }
 
-.about p {
+section p {
   padding: 0 .2rem 1rem;
 }
 
 .skills, .projects {
   width: 48%;
+  height: 18rem;
 }
 
 .skills {
@@ -138,7 +114,7 @@ a {
 
 details p {
   font-size: .8rem;
-  transform: translateY(1.75rem);
+  transform: translateY(1.25rem);
 }
 
 section ul li {
@@ -156,6 +132,22 @@ footer {
   margin: 20px 0;
   border-radius: 2rem;
   float: left;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+
+footer ul li div a, footer ul li div img {
+  float: left;
+  padding: 0 5px;
+}
+
+footer ul li div a {
+  transform: translateY(.3rem);
 }
 
 @media screen and (min-width: 1200px) {
