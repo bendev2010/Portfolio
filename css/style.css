@@ -1,10 +1,10 @@
 * {
-  margin: 0;
+  margin: 0;  
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  text-decoration: none !important;
 }
 :root {
-  font-size: 15px;
   --bg-color: white;
 }
 body {
@@ -48,34 +48,62 @@ nav h1 {
   border-radius: 50%;
 }
 
-nav ul {
+.links {
   grid-area: nav;
   display: flex;
   height: 50px;
-  justify-content: space-around;
+  justify-content: right;
   align-items: center;
-  list-style-type: none;
-}
-nav ul li {
-  cursor: pointer;
 }
 
 a {
   color: black;
-  text-decoration: none;
+}
+
+nav button {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+  border-right: 1px solid black;
+  transition: .5s;
+}
+
+nav button:hover {
+  background-color: rgb(202, 231, 255);
+}
+
+#lightbutton {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+#glassbutton {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border: none;
+}
+
+#glassbutton .icon {
+ height: 20px;
+ width: 20px;
+ transform: translateX(-5px);
 }
 
 .menubtn {
   grid-area: menu;
   display: none;
-  background-color: transparent;
-  border: none;
   z-index: 10;
+  font-size: 50px;
+  transform: translateX(30px);
+
 }
 
  section {
   border-radius: 2rem;
-  background-color: var(--bg-color);
+  background-color: rgb(246, 251, 255);
   padding: 20px;
   margin: 20px 0;
 }
@@ -86,10 +114,7 @@ section p {
 
 .skills, .projects {
   width: 48%;
-  height: 18rem;
-}
-
-.skills {
+  height: 15rem;
   float: left;
 }
 
@@ -102,6 +127,7 @@ section p {
 .iconli {
   list-style: none;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .iconli {
@@ -125,6 +151,10 @@ section ul li {
   float: right;
 }
 
+.projects ul li {
+  padding: 5px;
+}
+
 footer {
   background-color: var(--bg-color);
   width: 100%;
@@ -144,6 +174,7 @@ footer ul {
 footer ul li div a, footer ul li div img {
   float: left;
   padding: 0 5px;
+  cursor: pointer;
 }
 
 footer ul li div a {
@@ -154,6 +185,12 @@ footer ul li div a {
   :root {
     font-size: 18px;
   }
+
+  section:hover, footer:hover {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+
 }
 @media screen and (max-width: 1200px) {
   :root {
@@ -164,7 +201,7 @@ footer ul li div a {
   :root {
     font-size: 10px;
   }
-  nav ul {
+  nav .links {
     display: none;
   }
   nav h1 {

@@ -58,21 +58,42 @@ nav h1 {
   border-radius: 50%;
 }
 
-nav ul {
+.links {
   grid-area: nav;
   display: flex;
   height: 50px;
-  justify-content: space-around;
+  justify-content: right;
   align-items: center;
-  list-style-type: none;
-}
-nav ul li {
-  cursor: pointer;
 }
 
 a {
   color: black;
-  text-decoration: none;
+}
+
+nav button {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+  border-right: 1px solid black;
+  transition: .5s;  
+}
+
+nav button:hover {
+  background-color: rgb(202, 231, 255);
+}
+
+#lightbutton {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+#glassbutton {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border: none;
 }
 
 .menubtn {
@@ -81,6 +102,7 @@ a {
   background-color: transparent;
   border: none;
   z-index: 10;
+  font-size: 8rem;
 }
 
 section p {
@@ -89,7 +111,7 @@ section p {
 
 .skills, .projects {
   width: 48%;
-  height: 17rem;
+  height: 15rem;
 }
 
 .skills {

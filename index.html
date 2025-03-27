@@ -17,16 +17,12 @@
         <img src="images/benedictnewton.jpg" alt="Benedict Newton">
         <h1>Benedict Newton</h1>
       </div>
-      <ul>
-        <li><a href="index.html">Normal</a></li>
-        <li onclick="changeGlass()" id="glasslink">Glass</li><!-- Make glass + animation-->
-        <li onclick="changeNeu()" id="neulink">Neu</li>
-      </ul>
-      <a class="menubtn" href="javascript:void(0)">
-        <svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960" width="40px" fill="#000" class="menu" >
-          <path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/>
-        </svg>
-      </a>
+      <div class="links">
+        <button id="lightbutton" onclick="window.location.reload();">&#9728;</button>
+          <button>&#9790;</button>
+          <button id="glassbutton" onclick="changeGlass()"><img src="icons/glass.png" alt="glass" class="icon"></button>
+      </div>
+      <a class="menubtn" href="javascript:void(0)">&#9776;</a>
   </nav>
 </header>
 
@@ -64,9 +60,7 @@
           <p>HTML, CSS, JS, Python, React, Office 365, Adobe Suite, Github, Git</p>
         </details>
       </li>
-      <li>Fast Typing</li>
-      <li>Critical Thinking</li>
-      <li>Problem Solving</li>
+      <li>Critical Thinking and Problem Solving</li>
       <li>Collaboration</li>
       <li>Creativity</li>
     </ul>
@@ -77,7 +71,7 @@
     <ul class="skill1">
       <li><a href="index.html">Portfolio</a></li>
       <li><a href="">Tigers Cry Too</a></li>
-      <li><a href="">To do list and Pomodoro Timer</a></li>
+      <li><a href="">Todo list and Pomodoro Timer</a></li>
       <li><a href="">Peace Sanctuary</a></li>
       <li><a href="">And more on Github</a></li>
     </ul>
