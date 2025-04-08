@@ -123,24 +123,14 @@ section p {
   height: 2rem;
   padding: 0 .1rem;
 }
+/*
+details .icon {
+  width: 1.75rem;
+  height: 1.75rem;
+} */
 
-.iconli {
-  list-style: none;
-  margin-bottom: 10px;
-  cursor: pointer;
-}
-
-.iconli {
-  transform: translateX( -20px);
-}
-
-.iconli img {
-  transform: translateY(15px);
-}
-
-details p {
+.skills p {
   font-size: .8rem;
-  transform: translateY(1.25rem);
 }
 
 section ul li {
