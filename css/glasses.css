@@ -1,0 +1,26 @@
+* {
+  font-family: Raleway, sans-serif;
+}
+
+:root {
+    --bg-color: rgba(245, 245, 255, 0.3);
+}
+
+header, .container section, footer {
+  background-color: var(--bg-color);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-radius: 2rem;
+}
+
+body {
+  background-color: blue;
+  background: url(../images/glassbg.jpg) no-repeat center center/cover;
+  background-attachment: fixed;
+  padding: 20px 7.5vw; 
+}
+
+.container {
+  margin: 40px 0;
+  justify-content: space-between;
+}

@@ -1,0 +1,98 @@
+* {
+  margin: 0;  
+  box-sizing: border-box;
+  text-decoration: none;
+  color: white
+}
+
+header {
+  width: 100%;
+  padding: 20px;
+  height: 20vh;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: var(--accent) solid 2px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.links {
+  display: flex;
+}
+
+header button {
+  height: 50px;
+  background-color: transparent;
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+}
+
+.container {
+  border-radius: 2rem;
+  display: flex;
+}
+
+.container section {
+  border-radius: 2rem;
+  margin: 1rem; 
+  text-align: center;
+  padding: 1rem 1rem 2rem 1rem;
+}
+
+.about {
+  flex: 1;
+}
+
+.skills {
+  flex: 2.5;
+}
+
+.about img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+h2, h3 {
+  padding: 20px 20px 0 20px;
+}
+
+.skillicons {
+    list-style: none;
+    padding: 1rem;
+}
+
+.skillicons img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.projectlist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.projectcard {
+  list-style-type: none;
+  padding: 1rem 0;
+}
+
+.projectcard img {
+  width: 10rem;
+  height: 15rem;
+  border: white solid 2px;
+}
+
+h4 a {
+  color: var(--accent);
+}

@@ -74,14 +74,7 @@ nav button:hover {
   background-color: rgb(202, 231, 255);
 }
 
-#lightbutton {
-  border-top-left-radius: 50%;
-  border-bottom-left-radius: 50%;
-}
-
 #glassbutton {
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
   border: none;
 }
 
