@@ -49,7 +49,6 @@ nav h1 {
 }
 
 .links {
-  grid-area: nav;
   display: flex;
   height: 50px;
   justify-content: right;

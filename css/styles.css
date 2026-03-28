@@ -1,0 +1,49 @@
+* {
+  margin: 0;  
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none !important;
+}
+
+:root {
+  --bg-color: white;
+}
+body {
+  background: aliceblue;
+  color: black;
+}
+
+/* Header */
+
+header {
+  background-color: var(--bg-color);
+  width: 100%;
+  padding: 20px;
+  height: 20vh;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  padding: 0 25px;
+}
+
+.links {
+  display: flex;
+  height: 50px;
+  justify-content: right;
+  align-items: center;
+}
+
+nav button {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+}
