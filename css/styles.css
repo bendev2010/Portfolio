@@ -1,5 +1,5 @@
 * {
-  font-family: "Montserrat", sans-serif;
+  font-family: monospace, "Montserrat", sans-serif;
 }
 
 :root {
@@ -42,3 +42,4 @@ body {
   transition: transform 0.1s ease;
   z-index: 99;
 }
+

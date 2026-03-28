@@ -167,7 +167,7 @@ footer ul li div a, footer ul li div img {
   padding: 0 5px;
 }
 
-footer ul li div a {
+footer ul li div a, footer ul li a {
   transform: translateY(.3rem);
 }
 
