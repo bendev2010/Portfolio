@@ -13,8 +13,9 @@ This a portfolio featuring a few of my other public projects and a practice proj
 - Responsive Mobile Design
 
 
-
-
+## Useful Links (for me)
+https://fontawesome.com/icons
+https://www.toptal.com/designers/htmlarrows/symbols/
 
 
 
